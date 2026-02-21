@@ -18,7 +18,7 @@ export function Hero() {
       {/* Subtle gradient overlay for depth */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary/0 via-primary/50 to-primary" />
 
-      <div className="relative z-10 max-w-[1200px] mx-auto px-6 py-24 w-full">
+      <div className="relative z-10 max-w-[1200px] mx-auto px-6 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left side - Content */}
           <div className="space-y-8">
