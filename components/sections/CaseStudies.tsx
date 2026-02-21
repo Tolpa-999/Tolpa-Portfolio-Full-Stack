@@ -13,6 +13,7 @@ interface CaseStudy {
   results: string
   icon: any
   image?: string
+  link?: string
 }
 
 /**
@@ -27,6 +28,7 @@ export function CaseStudies() {
       descriptor: 'Multi-Tenant Lead Generation SaaS',
       icon: SiGoogleads,
       image: '/images/eyzle.webp',
+      link: 'https://eyzle.net/',
       problem:
         'B2B companies needed a scalable platform to automate lead generation campaigns across multiple client subdomains with real-time tracking.',
       solution:
@@ -46,6 +48,7 @@ export function CaseStudies() {
       descriptor: 'EdTech Platform',
       icon: SiCoursera,
       image: '/images/ur_doc.webp',
+      link: 'https://hazem-hamdy.com',
       problem:
         'Students needed a secure, scalable platform for structured learning with protected video content, controlled access, and real-time engagement features.',
       solution:
@@ -67,6 +70,7 @@ export function CaseStudies() {
       descriptor: 'Telehealth Platform',
       icon: SiGoogleanalytics,
       image: '/images/co_clinic.webp',
+      link: 'https://co-clinic-co.vercel.app',
       problem:
         'Healthcare providers needed a secure, HIPAA-compliant system to store and manage patient documents with role-based access.',
       solution:
@@ -85,6 +89,7 @@ export function CaseStudies() {
       descriptor: 'Real-Time Analytics & Management System',
       icon: SiGraphql,
       image: '/images/admin_dashboard.webp',
+      link: 'https://admin-dashboard-react-vercil.netlify.app',
       problem:
         'Operations teams needed a customizable, data-driven dashboard to monitor key metrics in real time and improve decision-making efficiency.',
       solution:
@@ -106,6 +111,7 @@ export function CaseStudies() {
       descriptor: 'E-commerce Platform',
       icon: SiShopify,
       image: '/images/perfumeni.webp',
+      link: '#',
       problem:
         'A boutique fragrance brand needed a modern, conversion-focused e-commerce experience with inventory management.',
       solution:
@@ -123,6 +129,7 @@ export function CaseStudies() {
       descriptor: 'Startup Discovery Platform',
       icon: SiYcombinator,
       image: '/images/yc_directory.webp',
+      link: 'https://yc-directory.vercel.app',
       problem:
         'Investors and founders needed an organized, searchable database of Y Combinator startups.',
       solution:
@@ -155,7 +162,7 @@ export function CaseStudies() {
               <Card glow="cyan" hover={true} className="group">
                 <div className="space-y-6">
                   {/* Project header with icon and optional image */}
-                  <div className="flex flex-col md:flex-row items-start gap-4">
+                  <div className="flex flex-col md:flex-row items-start justify-between gap-4">
                     <div className="flex items-start gap-4 flex-shrink-0">
                       <div className="w-14 h-14 rounded-lg bg-surface border border-accent/20 flex items-center justify-center flex-shrink-0">
                         <caseStudy.icon size={24} className="text-accent" />
@@ -169,6 +176,19 @@ export function CaseStudies() {
                         </p>
                       </div>
                     </div>
+                    {caseStudy.link && caseStudy.link !== '#' && (
+                      <a
+                        href={caseStudy.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 border border-accent/30 text-accent hover:bg-accent/20 transition-all duration-300 rounded-lg text-sm font-medium self-start"
+                      >
+                        <span>View Project</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className="fill-current">
+                          <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                        </svg>
+                      </a>
+                    )}
                   </div>
 
                   {/* Optional full-width project image */}

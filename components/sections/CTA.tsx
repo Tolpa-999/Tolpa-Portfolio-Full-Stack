@@ -15,15 +15,15 @@ export function CTA() {
       <div className="absolute inset-0 bg-gradient-to-b from-primary via-surface/20 to-primary" />
 
       {/* Accent glow effect */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-cta/5 rounded-full blur-3xl -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-accent/5 rounded-full blur-3xl -z-10" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <ScrollReveal>
           <h2 className="text-3xl md:text-5xl font-bold font-sans tracking-tight mb-6">
-            Ready to Start Your Project?
+            Ready to Build Your Digital Product?
           </h2>
           <p className="text-lg md:text-xl text-muted mb-10 max-w-2xl mx-auto">
-            Let's turn your idea into a scalable, revenue-generating system.
+            From concept to deployment — I transform ideas into modern, fast, and user-friendly websites and platforms with clean code, exceptional UX, and high performance.
           </p>
         </ScrollReveal>
 
@@ -44,7 +44,7 @@ export function CTA() {
               href="https://github.com/Tolpa-999"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-300 px-8 py-4 text-lg bg-transparent border border-cta/50 text-cta hover:bg-cta/10 hover:border-cta gap-2"
+              className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-300 px-8 py-4 text-lg bg-transparent border border-accent/50 text-accent hover:bg-accent/10 hover:border-accent gap-2"
             >
               <SiGithub size={20} />
               View GitHub
@@ -54,8 +54,7 @@ export function CTA() {
 
         <ScrollReveal delay={0.3}>
           <p className="text-sm text-muted">
-            I turn business ideas into scalable SaaS platforms that generate
-            revenue.
+            Software Engineer • Web Developer • Full-Stack Designer — bringing your vision to professional digital reality.
           </p>
         </ScrollReveal>
       </div>

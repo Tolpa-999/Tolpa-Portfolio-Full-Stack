@@ -1,7 +1,6 @@
 'use client'
 
 import { Hero } from '@/components/sections/Hero'
-import { About } from '@/components/sections/About'
 import { Tools } from '@/components/sections/Tools'
 import { Metrics } from '@/components/sections/Metrics'
 import { CaseStudies } from '@/components/sections/CaseStudies'
@@ -20,7 +19,6 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-primary">
       <Hero />
-      <About />
       <Tools />
       <Metrics />
       <CaseStudies />

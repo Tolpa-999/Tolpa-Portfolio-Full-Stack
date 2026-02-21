@@ -37,7 +37,7 @@ export function Contact() {
     await new Promise(resolve => setTimeout(resolve, 1500))
 
     // Create mailto link for email client
-    const mailtoLink = `mailto:mahmud.tolpa@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+    const mailtoLink = `mailto:mahmudtolpa666@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`
     )}`
 
@@ -65,15 +65,15 @@ export function Contact() {
       <div className="absolute inset-0 bg-gradient-to-b from-primary via-surface/20 to-primary" />
 
       {/* Accent glow effect */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-cta/5 rounded-full blur-3xl -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-accent/5 rounded-full blur-3xl -z-10" />
 
       <div className="relative z-10 max-w-[1200px] mx-auto px-6">
         <ScrollReveal>
           <h2 className="text-3xl md:text-4xl font-bold font-sans tracking-tight text-center mb-4">
-            Let's Build Something Great Together
+            Let's Build Your Digital Vision
           </h2>
           <p className="text-muted text-center max-w-2xl mx-auto mb-16">
-            Have a project idea? Let's discuss how I can help you turn your vision into reality.
+            Whether you need a new website, a web platform, an admin dashboard, or want to improve an existing system — let's discuss how I can help transform your idea into a professional digital reality.
           </p>
         </ScrollReveal>
 
@@ -86,19 +86,19 @@ export function Contact() {
                   Get in Touch
                 </h3>
                 <p className="text-muted leading-relaxed">
-                  I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+                  With nearly two years of experience in full-stack development, I'm ready to help you build modern, fast, and user-friendly websites and web platforms — from concept to deployment.
                 </p>
               </div>
 
               <div className="space-y-4">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-surface border border-cta/20 flex items-center justify-center flex-shrink-0">
-                    <FaEnvelope size={20} className="text-cta" />
+                  <div className="w-12 h-12 rounded-lg bg-surface border border-accent/20 flex items-center justify-center flex-shrink-0">
+                    <FaEnvelope size={20} className="text-accent" />
                   </div>
                   <div>
                     <p className="text-sm text-muted mb-1">Email</p>
-                    <a href="mailto:mahmud.tolpa@gmail.com" className="text-text hover:text-cta transition-colors duration-300">
-                      mahmud.tolpa@gmail.com
+                    <a href="mailto:mahmudtolpa666@gmail.com" className="text-text hover:text-accent transition-colors duration-300">
+                      mahmudtolpa666@gmail.com
                     </a>
                   </div>
                 </div>
@@ -130,9 +130,9 @@ export function Contact() {
                 </div>
               </div>
 
-              {/* <div className="bg-cta/5 rounded-lg border border-cta/20 p-6">
+              {/*               <div className="bg-accent/5 rounded-lg border border-accent/20 p-6">
                 <p className="text-sm text-muted leading-relaxed mb-2">
-                  <span className="text-cta font-medium">Response Time:</span> I typically respond within 24-48 hours.
+                  <span className="text-accent font-medium">Response Time:</span> I typically respond within 24-48 hours.
                 </p>
                 <p className="text-xs text-muted">
                   The contact form will open your email client to send me a message directly.
@@ -157,7 +157,7 @@ export function Contact() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-surface border border-surface-700/50 rounded-lg text-text placeholder-muted/50 focus:outline-none focus:border-cta/50 transition-colors duration-300"
+                      className="w-full px-4 py-3 bg-surface border border-surface-700/50 rounded-lg text-text placeholder-muted/50 focus:outline-none focus:border-accent/50 transition-colors duration-300"
                       placeholder="Your name"
                     />
                   </div>
@@ -237,7 +237,7 @@ export function Contact() {
                   <motion.div
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="flex items-center gap-2 text-cta text-sm"
+                    className="flex items-center gap-2 text-accent text-sm"
                   >
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="fill-current">
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />

@@ -31,22 +31,21 @@ export function Hero() {
               >
                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
                 <span className="text-sm text-accent font-medium">
-                  Full-Stack Systems Engineer
+                  2+ Years Experience
                 </span>
               </motion.div>
             </ScrollReveal>
 
             <ScrollReveal delay={0.1}>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-sans tracking-tighter leading-tight">
-                I Build Scalable SaaS Platforms That{' '}
-                <span className="text-accent">Turn Ideas Into Revenue.</span>
+                Software Engineer &{' '}
+                <span className="text-accent">Full-Stack Developer</span>
               </h1>
             </ScrollReveal>
 
             <ScrollReveal delay={0.2}>
               <p className="text-lg text-muted font-body leading-relaxed">
-                Full-stack architecture • High-converting systems • Fast MVP
-                launches • Production-ready infrastructure
+                I transform ideas into real digital products — from business websites and platforms to admin dashboards and fully integrated systems — with clean code, exceptional user experience, and high performance.
               </p>
             </ScrollReveal>
 
@@ -70,9 +69,16 @@ export function Hero() {
           <ScrollReveal delay={0.4} className="hidden lg:block">
             <div className="relative">
               {/* Minimalist system flow diagram with icons */}
-              <div className="grid grid-cols-3 gap-8 p-8">
+              <div className="grid grid-cols-3 gap-8 p-8 relative">
+                {/* Subtle connecting background lines */}
+                <div className="absolute inset-8 grid grid-rows-3 gap-[88px]">
+                  <div className="flex items-center justify-center border-b border-accent/10"></div>
+                  <div className="flex items-center justify-center border-b border-accent/10"></div>
+                  <div className="flex items-center justify-center"></div>
+                </div>
+
                 {/* Top row */}
-                <div className="flex flex-col items-center gap-3">
+                <div className="flex flex-col items-center gap-3 relative z-10">
                   <motion.div
                     className="w-16 h-16 rounded-xl bg-surface border border-accent/30 flex items-center justify-center"
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -84,7 +90,7 @@ export function Hero() {
                   <span className="text-xs text-muted font-mono">Frontend</span>
                 </div>
 
-                <div className="flex flex-col items-center gap-3">
+                <div className="flex flex-col items-center gap-3 relative z-10">
                   <motion.div
                     className="w-16 h-16 rounded-xl bg-surface border border-accent/30 flex items-center justify-center"
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -96,7 +102,7 @@ export function Hero() {
                   <span className="text-xs text-muted font-mono">API Layer</span>
                 </div>
 
-                <div className="flex flex-col items-center gap-3">
+                <div className="flex flex-col items-center gap-3 relative z-10">
                   <motion.div
                     className="w-16 h-16 rounded-xl bg-surface border border-accent/30 flex items-center justify-center"
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -104,14 +110,14 @@ export function Hero() {
                     transition={{ delay: 1.2, duration: 0.5 }}
                   >
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" className="text-accent">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3 3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 1.8-3.83 3.82-3.83 6.21 0 4.41 3.59 8 8 8 2.02 0 3.79-1.84 3.82-3.83.01 2.02-1.73 3.93-4.22 5.93-1.27-1.11-3.33-2.5-5.92-2.5z" fill="currentColor"/>
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.83 6-3.83s5.97 1.84 6 3.83c-1.29 1.94-3.5 3.22-6 3.22z" fill="currentColor"/>
                     </svg>
                   </motion.div>
                   <span className="text-xs text-muted font-mono">Auth</span>
                 </div>
 
                 {/* Middle row */}
-                <div className="flex flex-col items-center gap-3">
+                <div className="flex flex-col items-center gap-3 relative z-10">
                   <motion.div
                     className="w-16 h-16 rounded-xl bg-surface border border-accent/30 flex items-center justify-center"
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -125,7 +131,7 @@ export function Hero() {
                   <span className="text-xs text-muted font-mono">Cache</span>
                 </div>
 
-                <div className="flex flex-col items-center gap-3">
+                <div className="flex flex-col items-center gap-3 relative z-10">
                   <motion.div
                     className="w-16 h-16 rounded-xl bg-surface border border-accent/30 flex items-center justify-center"
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -137,7 +143,7 @@ export function Hero() {
                   <span className="text-xs text-muted font-mono">Database</span>
                 </div>
 
-                <div className="flex flex-col items-center gap-3">
+                <div className="flex flex-col items-center gap-3 relative z-10">
                   <motion.div
                     className="w-16 h-16 rounded-xl bg-surface border border-accent/30 flex items-center justify-center"
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -145,14 +151,14 @@ export function Hero() {
                     transition={{ delay: 1.8, duration: 0.5 }}
                   >
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" className="text-accent">
-                      <path d="M4 4h16v3h4v2H4V4zm0 5h16v3h4v2H4V9zm0 5h16v3h4v2H4v-5z" fill="currentColor"/>
+                      <path d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h10v2H4v-2z" fill="currentColor"/>
                     </svg>
                   </motion.div>
                   <span className="text-xs text-muted font-mono">Queue</span>
                 </div>
 
                 {/* Bottom row */}
-                <div className="flex flex-col items-center gap-3">
+                <div className="flex flex-col items-center gap-3 relative z-10">
                   <motion.div
                     className="w-16 h-16 rounded-xl bg-surface border border-accent/30 flex items-center justify-center"
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -166,7 +172,7 @@ export function Hero() {
                   <span className="text-xs text-muted font-mono">VPS</span>
                 </div>
 
-                <div className="flex flex-col items-center gap-3">
+                <div className="flex flex-col items-center gap-3 relative z-10">
                   <motion.div
                     className="w-16 h-16 rounded-xl bg-surface border border-accent/30 flex items-center justify-center"
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -180,7 +186,7 @@ export function Hero() {
                   <span className="text-xs text-muted font-mono">Deploy</span>
                 </div>
 
-                <div className="flex flex-col items-center gap-3">
+                <div className="flex flex-col items-center gap-3 relative z-10">
                   <motion.div
                     className="w-16 h-16 rounded-xl bg-surface border border-accent/30 flex items-center justify-center"
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -194,68 +200,6 @@ export function Hero() {
                   <span className="text-xs text-muted font-mono">Monitor</span>
                 </div>
               </div>
-
-              {/* Connection lines */}
-              <svg
-                className="absolute inset-0 w-full h-full pointer-events-none"
-                viewBox="0 0 400 200"
-                fill="none"
-              >
-                <motion.path
-                  d="M80 50 L160 50"
-                  stroke="#22D3EE"
-                  strokeWidth="1"
-                  strokeOpacity="0.2"
-                  initial={{ pathLength: 0 }}
-                  animate={{ pathLength: 1 }}
-                  transition={{ delay: 1, duration: 1 }}
-                />
-                <motion.path
-                  d="M240 50 L320 50"
-                  stroke="#22D3EE"
-                  strokeWidth="1"
-                  strokeOpacity="0.2"
-                  initial={{ pathLength: 0 }}
-                  animate={{ pathLength: 1 }}
-                  transition={{ delay: 1.2, duration: 1 }}
-                />
-                <motion.path
-                  d="M80 120 L160 120"
-                  stroke="#22D3EE"
-                  strokeWidth="1"
-                  strokeOpacity="0.2"
-                  initial={{ pathLength: 0 }}
-                  animate={{ pathLength: 1 }}
-                  transition={{ delay: 1.4, duration: 1 }}
-                />
-                <motion.path
-                  d="M240 120 L320 120"
-                  stroke="#22D3EE"
-                  strokeWidth="1"
-                  strokeOpacity="0.2"
-                  initial={{ pathLength: 0 }}
-                  animate={{ pathLength: 1 }}
-                  transition={{ delay: 1.6, duration: 1 }}
-                />
-                <motion.path
-                  d="M80 190 L160 190"
-                  stroke="#22D3EE"
-                  strokeWidth="1"
-                  strokeOpacity="0.2"
-                  initial={{ pathLength: 0 }}
-                  animate={{ pathLength: 1 }}
-                  transition={{ delay: 1.8, duration: 1 }}
-                />
-                <motion.path
-                  d="M240 190 L320 190"
-                  stroke="#22D3EE"
-                  strokeWidth="1"
-                  strokeOpacity="0.2"
-                  initial={{ pathLength: 0 }}
-                  animate={{ pathLength: 1 }}
-                  transition={{ delay: 2, duration: 1 }}
-                />
-              </svg>
 
               {/* Subtle glow effect */}
               <div className="absolute -inset-4 bg-accent/5 blur-3xl -z-10" />

@@ -34,7 +34,7 @@ export function Button({
     primary:
       'bg-accent text-primary hover:bg-accent/90 hover:shadow-[0_0_24px_rgba(34,211,238,0.25)]',
     secondary:
-      'bg-cta text-primary hover:bg-cta/90 hover:shadow-[0_0_24px_rgba(251,191,36,0.25)]',
+      'bg-accent text-primary hover:bg-accent/90 hover:shadow-[0_0_24px_rgba(34,211,238,0.25)]',
     outline:
       'bg-transparent border border-accent/50 text-accent hover:bg-accent/10 hover:border-accent',
   }
